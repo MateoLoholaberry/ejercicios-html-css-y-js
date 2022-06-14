@@ -1,0 +1,126 @@
+:root {
+    --primary: #a5c882;
+    --secondary: #d33f49;
+    --light: #fff;
+    ---dark: #000;
+    --disabled: #e7e7e7;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--disabled);
+}
+
+*::first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateLeft {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateNumber,
+#dateMonth,
+#dateText {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--disabled);
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btnBorrarEstilos {
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #f53737;
+    color: var(--light);
+    margin-left: 260px;
+}
+
+.btnBorrarEstilos:active {
+    background-color: var(--secondary);
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--disabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.done {
+    background-color: var(--disabled);
+    text-decoration: line-through;
+    color: var(---dark);
+}
