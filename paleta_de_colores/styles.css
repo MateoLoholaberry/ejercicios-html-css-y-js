@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-weight: bold;
+    background-color: #fdf0df;
+}
+
+#palleteContainer {
+    display: flex;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.palleteItem {
+    flex-grow: 1;
+    min-width: 200px;
+    transition: background-color .5s;
+}
+
+.palleteItem > span {
+    padding: 2rem;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 20%;
+    border: none;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+}
